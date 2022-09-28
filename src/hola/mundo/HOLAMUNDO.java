@@ -20,6 +20,7 @@ public class HOLAMUNDO {
         vista.setVisible(true);
         System.out.println("HOLA 1");
         System.out.println("PRUBA 1");
+        System.out.println("PRUBA 2");
     }
     
 }
