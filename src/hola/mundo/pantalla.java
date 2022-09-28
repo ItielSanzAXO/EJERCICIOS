@@ -45,6 +45,8 @@ public class pantalla extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 51, 255));
+
         txtNombre.setEditable(false);
 
         btnEnviar.setText("ENVIAR");
