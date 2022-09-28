@@ -19,7 +19,7 @@ public class HOLAMUNDO {
         pantalla vista= new pantalla();
         vista.setVisible(true);
         System.out.println("HOLA 1");
-        
+        System.out.println("PRUBA 1");
     }
     
 }
