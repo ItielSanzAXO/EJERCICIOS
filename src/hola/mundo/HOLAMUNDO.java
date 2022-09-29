@@ -22,6 +22,7 @@ public class HOLAMUNDO {
         System.out.println("PRUBA 1");
         System.out.println("PRUBA 2");
         System.out.println("Itiel 1");
+        System.out.println("Pazos 2");
     }
     
 }
