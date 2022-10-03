@@ -20,7 +20,7 @@ public class HOLAMUNDO {
         vista.setVisible(true);
         System.out.println("HOLA 1");
         System.out.println("PRUBA 1");
-        System.out.println("PRUBA 2");
+        System.out.println("PRUBA 2 Sopa do Macaco");
         System.out.println("Itiel 1");
         System.out.println("Pazos 2");
         System.out.println("Pazos ESTUVO AQUI");
@@ -29,6 +29,7 @@ public class HOLAMUNDO {
         System.out.println("Gabriel");
         System.out.println("Eunice");
         System.out.println("Cristian");
+        
         System.out.println("Daniel");
         System.out.println("Ledesma!");
         System.out.println("José Luis");
@@ -36,7 +37,7 @@ public class HOLAMUNDO {
                  System.out.println("picazo");
         System.out.println("Daniela QH");
         System.out.printIn("Bruno");
-
+        System.out.printIn("Fernando");
                                   
 
                 
