@@ -23,6 +23,7 @@ public class HOLAMUNDO {
         System.out.println("PRUBA 2");
         System.out.println("Itiel 1");
         System.out.println("Pazos 2");
+        System.out.println("Pazos ESTUVO AQUI");
         //COLOCA TU NOMBRE DESDE AQUI
         System.out.println("Erik");
         System.out.println("Gabriel");
