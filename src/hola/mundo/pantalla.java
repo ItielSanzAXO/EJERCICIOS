@@ -5,6 +5,8 @@
  */
 package hola.mundo;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Lab2_00
@@ -101,6 +103,12 @@ public class pantalla extends javax.swing.JFrame {
 
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
         Palabra();
+        //MENSAJE DE AVISO
+        JOptionPane.showMessageDialog(null, "Abriendo Calculadora");
+        Calculadora vista = new Calculadora();
+        vista.setVisible(true);//MUESTRA EL SIG FRONT
+        System.out.println("Muestra Calculadora");
+        this.dispose();//CIERRA EL FRONT 
     }//GEN-LAST:event_btnEnviarActionPerformed
 
     /**
