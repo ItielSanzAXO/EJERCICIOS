@@ -29,10 +29,14 @@ public class HOLAMUNDO {
         System.out.println("Gabriel");
         System.out.println("Eunice");
         System.out.println("Cristian");
+        
         System.out.println("Daniel");
         System.out.println("Ledesma!");
         System.out.println("José Luis");
-         System.out.println("Eric Castillo. presente.");
-        
+         System.out.println("Eric Castillo. presente.");      
+        System.out.println("picazo");
+        System.out.println("Daniela QH");
+        System.out.println("Bruno");
+        System.out.println("Fernando");
 }
 }
