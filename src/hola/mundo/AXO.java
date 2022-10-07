@@ -7,7 +7,7 @@ package hola.mundo;
 
 /**
  *
- * @author Lab2_00
+ *  @author AXO<l211080078@iztapalapa.tecnm.mx>
  */
 public class AXO extends javax.swing.JFrame {
 
@@ -59,7 +59,7 @@ public class AXO extends javax.swing.JFrame {
                         .addGap(70, 70, 70)
                         .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(154, 154, 154)
+                        .addGap(164, 164, 164)
                         .addComponent(txtValidar)))
                 .addContainerGap(80, Short.MAX_VALUE))
         );
