@@ -14,10 +14,26 @@ public class AXO extends javax.swing.JFrame {
     /**
      * Creates new form AXO
      */
+    
+    
     public AXO() {
         initComponents();
+        Validar();
     }
 
+    public void Validar(){
+        String Usu = txtUsuario.getText().trim();
+        Correos correo = new Correos(""+Usu);
+	String name = correo.getName();
+        String Val=""+name;
+        if(Usu.equals(Val)){
+            System.out.println("VALIDADO");
+            btnValidar.setEnabled(true);
+        }else{
+            System.out.println("NO ENCONTRADO");
+            btnValidar.setEnabled(false);
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,7 +46,7 @@ public class AXO extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
-        txtValidar = new javax.swing.JButton();
+        btnValidar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,10 +55,23 @@ public class AXO extends javax.swing.JFrame {
         jLabel1.setText("LOGO");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtValidar.setText("VALIDAR");
-        txtValidar.addActionListener(new java.awt.event.ActionListener() {
+        txtUsuario.addCaretListener(new javax.swing.event.CaretListener() {
+            public void caretUpdate(javax.swing.event.CaretEvent evt) {
+                txtUsuarioCaretUpdate(evt);
+            }
+        });
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtValidarActionPerformed(evt);
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+
+        btnValidar.setText("VALIDAR");
+        btnValidar.setAlignmentY(0.0F);
+        btnValidar.setEnabled(false);
+        btnValidar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnValidarActionPerformed(evt);
             }
         });
 
@@ -60,7 +89,7 @@ public class AXO extends javax.swing.JFrame {
                         .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(txtValidar)))
+                        .addComponent(btnValidar)))
                 .addContainerGap(80, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -71,7 +100,7 @@ public class AXO extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(txtValidar)
+                .addComponent(btnValidar)
                 .addContainerGap(72, Short.MAX_VALUE))
         );
 
@@ -89,11 +118,19 @@ public class AXO extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValidarActionPerformed
+    private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarActionPerformed
         CONTRASEÑA vista = new CONTRASEÑA();
         vista.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_txtValidarActionPerformed
+    }//GEN-LAST:event_btnValidarActionPerformed
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioActionPerformed
+
+    private void txtUsuarioCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_txtUsuarioCaretUpdate
+    Validar();        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuarioCaretUpdate
 
     /**
      * @param args the command line arguments
@@ -131,9 +168,9 @@ public class AXO extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnValidar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtUsuario;
-    private javax.swing.JButton txtValidar;
     // End of variables declaration//GEN-END:variables
 }

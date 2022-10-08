@@ -55,7 +55,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
-                          <Component id="txtValidar" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnValidar" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="80" max="32767" attributes="0"/>
@@ -70,7 +70,7 @@
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                   <Component id="txtUsuario" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="txtValidar" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnValidar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="72" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -88,13 +88,19 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtUsuario">
+          <Events>
+            <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txtUsuarioCaretUpdate"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsuarioActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="txtValidar">
+        <Component class="javax.swing.JButton" name="btnValidar">
           <Properties>
             <Property name="text" type="java.lang.String" value="VALIDAR"/>
+            <Property name="alignmentY" type="float" value="0.0"/>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtValidarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnValidarActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

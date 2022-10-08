@@ -21,8 +21,8 @@ public class Calculadora extends javax.swing.JFrame {
         //PARA ACEPTAR SOLO NUMEROS O LETRAS Y LIMITARLOS
         v.validarSoloNumeros(txtN1);
         v.validarSoloNumeros(txtN2);
-        v.limitarCaracteres(txtN1, 1);
-        v.limitarCaracteres(txtN2,100);
+        v.limitarCaracteres(txtN1,2);
+        v.limitarCaracteres(txtN2,2);
     }
     
     public void ValidarIngreso(){
