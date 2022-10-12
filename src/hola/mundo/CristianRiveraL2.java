@@ -46,11 +46,11 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(400, 330, 90, 20);
+        jTextField1.setBounds(400, 340, 90, 20);
 
         btnInSec.setText("Iniciar sesión");
         getContentPane().add(btnInSec);
-        btnInSec.setBounds(390, 410, 100, 22);
+        btnInSec.setBounds(390, 410, 100, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/IMG_4351.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -92,6 +92,7 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new CristianRiveraL2().setVisible(true);
             }
