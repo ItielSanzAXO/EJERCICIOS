@@ -47,55 +47,85 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="66" pref="66" max="-2" attributes="0"/>
-                                  <Component id="txtN1" min="-2" pref="70" max="-2" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="btnSuma" pref="66" max="32767" attributes="0"/>
+                                      <Component id="btnMulti" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="66" pref="66" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnSuma" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
-                                      <Component id="btnMulti" alignment="1" min="-2" pref="66" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtN1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtN2" max="32767" attributes="0"/>
-                              <Component id="btnResta" alignment="0" pref="80" max="32767" attributes="0"/>
+                              <Component id="btnResta" alignment="0" pref="103" max="32767" attributes="0"/>
                               <Component id="btnDiv" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtN2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                           <Component id="txtResult" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                  <EmptySpace pref="78" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtN1" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtN2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="txtN1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="txtN2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnSuma" min="-2" max="-2" attributes="0"/>
                       <Component id="btnResta" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnMulti" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnDiv" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+                          <Component id="btnDiv" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btnMulti" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="txtResult" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="65" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -113,34 +143,34 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnSuma">
           <Properties>
-            <Property name="text" type="java.lang.String" value="SUMA"/>
+            <Property name="text" type="java.lang.String" value="+"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumaActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnResta">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="RESTA"/>
-            <Property name="enabled" type="boolean" value="false"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestaActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="btnMulti">
           <Properties>
-            <Property name="text" type="java.lang.String" value="MULTI"/>
+            <Property name="text" type="java.lang.String" value="x"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMultiActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JButton" name="btnResta">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="-"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestaActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JButton" name="btnDiv">
           <Properties>
-            <Property name="text" type="java.lang.String" value="DIVI"/>
+            <Property name="text" type="java.lang.String" value="/"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -150,6 +180,21 @@
         <Component class="javax.swing.JTextField" name="txtResult">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Resultado"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Primer n&#xfa;m"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Segundo n&#xfa;m"/>
           </Properties>
         </Component>
       </SubComponents>
