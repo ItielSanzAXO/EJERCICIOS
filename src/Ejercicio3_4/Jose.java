@@ -17,7 +17,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
- * @author PC
+ * @author PC<201080210@iztapalapa.tecnm.mx>
  */
 public class Jose extends javax.swing.JFrame {
 
