@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hola.mundo;
+package Ejercicio3_4;
+
+import hola.mundo.CONTRASEÑA;
 
 /**
  *
@@ -36,7 +38,6 @@ public class Jose extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\josel\\Videos\\2020-08-17.jpg")); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txtVerificar.setText("VALIDAR");

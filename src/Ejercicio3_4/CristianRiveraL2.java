@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package hola.mundo;
+package Ejercicio3_4;
 
 /**
  *
@@ -50,7 +50,7 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
 
         btnInSec.setText("Iniciar sesión");
         getContentPane().add(btnInSec);
-        btnInSec.setBounds(390, 410, 100, 23);
+        btnInSec.setBounds(390, 410, 100, 29);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/IMG_4351.jpg"))); // NOI18N
         getContentPane().add(jLabel1);

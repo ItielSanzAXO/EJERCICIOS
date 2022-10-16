@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package hola.mundo;
+package Ejercicio3_4;
 
 
 
@@ -46,7 +46,7 @@ public class CristianRivera extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnIdentificar);
-        btnIdentificar.setBounds(330, 400, 90, 22);
+        btnIdentificar.setBounds(330, 400, 90, 29);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/descarga.png"))); // NOI18N
         jLabel3.setText("jLabel3");

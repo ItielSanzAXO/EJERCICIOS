@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hola.mundo;
+package Ejercicio3_4;
 
+import hola.mundo.CONTRASEÑA;
+import Ejercicio3_4.Correos;
 import java.awt.Image;
 import java.io.FileInputStream;
 import javax.imageio.ImageIO;
