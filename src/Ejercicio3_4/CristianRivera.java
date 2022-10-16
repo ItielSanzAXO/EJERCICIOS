@@ -2,19 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package hola.mundo;
+package Ejercicio3_4;
+
+
 
 /**
  *
  * @author new
  */
-public class CristianRiveraL2 extends javax.swing.JFrame {
+public class CristianRivera extends javax.swing.JFrame {
 
     /**
-     * Creates new form CristianRiveraL2
+     * Creates new form CristianRivera
      */
-    public CristianRiveraL2() {
+    public CristianRivera() {
         initComponents();
+        setLocationRelativeTo (null);
+        
     }
 
     /**
@@ -26,42 +30,48 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnIdentificar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        btnInSec = new javax.swing.JButton();
+        txtCorreo = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/descarga (1).png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(330, 80, 230, 225);
-
-        jTextField1.setText("Skinny Rivera");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        btnIdentificar.setText("Identificar");
+        btnIdentificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                btnIdentificarActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(400, 330, 90, 20);
+        getContentPane().add(btnIdentificar);
+        btnIdentificar.setBounds(330, 400, 90, 29);
 
-        btnInSec.setText("Iniciar sesión");
-        getContentPane().add(btnInSec);
-        btnInSec.setBounds(390, 410, 100, 22);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/descarga.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(320, 130, 130, 130);
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Escribe tu correo o numero telefonico ");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(280, 300, 210, 20);
+        getContentPane().add(txtCorreo);
+        txtCorreo.setBounds(300, 330, 160, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/IMG_4351.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 750, 820);
+        jLabel1.setBounds(0, 0, 700, 780);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void btnIdentificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIdentificarActionPerformed
+        CristianRiveraL2 v1 =new CristianRiveraL2();
+        v1.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnIdentificarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,28 +90,29 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CristianRiveraL2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CristianRivera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CristianRiveraL2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CristianRivera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CristianRiveraL2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CristianRivera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CristianRiveraL2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CristianRivera.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CristianRiveraL2().setVisible(true);
+                new CristianRivera().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnInSec;
+    private javax.swing.JButton btnIdentificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField txtCorreo;
     // End of variables declaration//GEN-END:variables
 }

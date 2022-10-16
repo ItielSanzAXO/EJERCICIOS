@@ -5,6 +5,7 @@
  */
 package hola.mundo;
 
+import Ejercicio3_4.AXO;
 import javax.swing.JOptionPane;
 
 /**
