@@ -5,6 +5,8 @@
 
 package Ejercicio3_4;
 
+import hola.mundo.CONTRASEÑA;
+
 /**
  *
  * @author Lil-Ledesma
