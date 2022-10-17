@@ -2,9 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Ejercicio3_4;
+package hola.mundo;
 
-import hola.mundo.CONTRASEÑA;
+import java.awt.Image;
+import java.io.FileInputStream;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -15,8 +20,53 @@ public class ErikGaEH extends javax.swing.JFrame {
     /**
      * Creates new form ErikGaEH
      */
+    FileInputStream fis;
+    int LongitudBytes;
     public ErikGaEH() {
         initComponents();
+        Validar();
+    }
+    
+    public void Validar(){
+        String Usu = txtNombre.getText().trim();
+        Correos correo = new Correos(""+Usu);
+	String name = correo.getName();
+        String Val=""+name;
+        if(Usu.equals(Val)){
+            System.out.println("VALIDADO");
+            btnValidar.setEnabled(true);
+        }else{
+            System.out.println("NO ENCONTRADO");
+            btnValidar.setEnabled(false);
+        }
+    }
+    
+     public void CargarFoto(){
+        JFileChooser j=new JFileChooser();
+        FileNameExtensionFilter filtro= new FileNameExtensionFilter("JPG,PNG,JPEG", 
+                "jpg","png","jpeg");
+        j.setFileFilter(filtro);
+        
+        int estado=j.showOpenDialog(null);
+        
+        if(estado==JFileChooser.APPROVE_OPTION){
+            try {
+                fis=new FileInputStream(j.getSelectedFile());
+                this.LongitudBytes=(int)j.getSelectedFile().length();
+                try {
+                    lblFoto.setIcon(null);
+                    Image icono = ImageIO.read(j.getSelectedFile()).getScaledInstance(lblFoto.getWidth(), 
+                            lblFoto.getHeight(), Image.SCALE_DEFAULT);
+                    lblFoto.setIcon(new ImageIcon(icono));
+                    lblFoto.updateUI();
+                    System.out.println("LongitudBytes:"+LongitudBytes);
+                } catch (Exception e) {
+                    System.out.println("Error al cargar la foto IO: "+e);
+                }
+            } catch (Exception e) {
+                System.out.println("Error al cargar file: "+e);
+            }
+        }
     }
 
     /**
@@ -29,21 +79,35 @@ public class ErikGaEH extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblFoto = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         btnValidar = new javax.swing.JButton();
+        btnCargar = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 51));
 
-        jLabel1.setText("jLabel1");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        lblFoto.setText("jLabel1");
+        lblFoto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        txtNombre.addCaretListener(new javax.swing.event.CaretListener() {
+            public void caretUpdate(javax.swing.event.CaretEvent evt) {
+                txtNombreCaretUpdate(evt);
+            }
+        });
 
         btnValidar.setText("Validar");
         btnValidar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnValidarActionPerformed(evt);
+            }
+        });
+
+        btnCargar.setText("Cargar Foto");
+        btnCargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCargarActionPerformed(evt);
             }
         });
 
@@ -54,26 +118,31 @@ public class ErikGaEH extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(219, 219, 219)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(175, 175, 175)
+                        .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(104, 104, 104)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(224, 224, 224)
-                        .addComponent(btnValidar)))
-                .addContainerGap(114, Short.MAX_VALUE))
+                        .addGap(223, 223, 223)
+                        .addComponent(btnValidar))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(212, 212, 212)
+                        .addComponent(btnCargar)))
+                .addContainerGap(191, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
+                .addGap(46, 46, 46)
+                .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
                 .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(32, 32, 32)
                 .addComponent(btnValidar)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(btnCargar)
+                .addContainerGap(140, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -81,26 +150,35 @@ public class ErikGaEH extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarActionPerformed
+        // TODO add your handling code here:
         CONTRASEÑA vista = new CONTRASEÑA();
         vista.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnValidarActionPerformed
+
+    private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
+        // TODO add your handling code here:
+        CargarFoto();
+    }//GEN-LAST:event_btnCargarActionPerformed
+
+    private void txtNombreCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_txtNombreCaretUpdate
+        // TODO add your handling code here:
+        Validar();
+    }//GEN-LAST:event_txtNombreCaretUpdate
 
     /**
      * @param args the command line arguments
@@ -138,9 +216,10 @@ public class ErikGaEH extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton btnCargar;
     private javax.swing.JButton btnValidar;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblFoto;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
