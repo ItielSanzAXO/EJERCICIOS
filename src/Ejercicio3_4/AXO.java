@@ -185,7 +185,7 @@ public class AXO extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUsuarioCaretUpdate
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
-    CargarFoto();
+        CargarFoto();
     }//GEN-LAST:event_btnCargarActionPerformed
 
     /**
