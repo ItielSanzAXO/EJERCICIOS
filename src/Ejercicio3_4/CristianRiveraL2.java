@@ -49,8 +49,13 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
         jTextField1.setBounds(400, 340, 90, 20);
 
         btnInSec.setText("Iniciar sesión");
+        btnInSec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInSecActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnInSec);
-        btnInSec.setBounds(390, 410, 100, 29);
+        btnInSec.setBounds(390, 410, 100, 24);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/IMG_4351.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -62,6 +67,10 @@ public class CristianRiveraL2 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void btnInSecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInSecActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnInSecActionPerformed
 
     /**
      * @param args the command line arguments

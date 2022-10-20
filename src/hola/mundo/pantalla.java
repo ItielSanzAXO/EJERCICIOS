@@ -6,6 +6,7 @@
 package hola.mundo;
 
 import Ejercicio3_4.AXO;
+import Ejercicio5.SplashAXO;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,9 +20,6 @@ public class pantalla extends javax.swing.JFrame {
      */
     public pantalla() {
         initComponents();
-        
-        
-        
     }
     
     public void Palabra(){
@@ -105,11 +103,12 @@ public class pantalla extends javax.swing.JFrame {
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
         Palabra();
         //MENSAJE DE AVISO
-        JOptionPane.showMessageDialog(null, "Abriendo Calculadora");
+       JOptionPane.showMessageDialog(null, "Abriendo Login");
         //Calculadora vista = new Calculadora();
         AXO vista = new AXO();
+        //SplashAXO vista= new SplashAXO();
         vista.setVisible(true);//MUESTRA EL SIG FRONT
-        System.out.println("Muestra Calculadora");
+        //System.out.println("Muestra Splash");
         this.dispose();//CIERRA EL FRONT 
     }//GEN-LAST:event_btnEnviarActionPerformed
 

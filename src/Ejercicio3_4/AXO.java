@@ -7,6 +7,7 @@ package Ejercicio3_4;
 
 import hola.mundo.CONTRASEÑA;
 import Ejercicio3_4.Correos;
+import Ejercicio5.SplashAXO;
 import java.awt.Image;
 import java.io.FileInputStream;
 import javax.imageio.ImageIO;
@@ -172,6 +173,7 @@ public class AXO extends javax.swing.JFrame {
 
     private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarActionPerformed
         CONTRASEÑA vista = new CONTRASEÑA();
+        //SplashAXO vista = new SplashAXO();
         vista.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnValidarActionPerformed
