@@ -4,7 +4,6 @@
  */
 package Ejercicio5;
 
-import static com.sun.tools.javac.tree.TreeInfo.args;
 import hola.mundo.Calculadora;
 import java.awt.Color;
 import static java.awt.Color.blue;
@@ -34,7 +33,6 @@ public class SplashAXO extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         lblCargando = new javax.swing.JLabel();
         barra = new javax.swing.JProgressBar();
         lblValor = new javax.swing.JLabel();
@@ -45,9 +43,6 @@ public class SplashAXO extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 300));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/descarga (1).png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
 
         lblCargando.setForeground(new java.awt.Color(255, 0, 51));
         lblCargando.setText("Cargando...");
@@ -117,7 +112,6 @@ public class SplashAXO extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JProgressBar barra;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblCargando;
     private javax.swing.JLabel lblValor;

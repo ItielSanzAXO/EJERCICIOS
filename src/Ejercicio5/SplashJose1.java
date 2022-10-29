@@ -45,11 +45,9 @@ public class SplashJose1 extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 204));
 
-        lblcargando.setForeground(new java.awt.Color(0, 0, 0));
         lblcargando.setText("CARGANDO...");
 
         porcentaje.setBackground(new java.awt.Color(0, 0, 0));
-        porcentaje.setForeground(new java.awt.Color(0, 0, 0));
         porcentaje.setText("0%");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fondos/FARMCIA.jpg"))); // NOI18N
